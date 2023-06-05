@@ -243,7 +243,7 @@
   background-color: #071170;
   border-radius: 10px;
   box-shadow: 0 5px 5px 2px #00aeff;
-  
+
 }
 
 .performance-sub-container:hover {
@@ -345,31 +345,6 @@
   padding-left: 15px;
   padding-right: 15px;
 }
-
-/* .cpm{
-  font-size: 18px;
-  font-family:'Trebuchet MS', sans-serif;
-}
-.accuracy{
-  font-size: 18px;
-  font-family:'Trebuchet MS', sans-serif;
-} */
-/* 
-.popup-container1{
-  height: 30vh;
-  border: 2px solid #071170;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.hello{
-  border: 2px solid #071170;
-  border-radius: 10px;
-} */
-
-
 
 
 .hideContainer{
