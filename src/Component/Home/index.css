@@ -4,7 +4,7 @@
 }
 
 .desktop-container{
-  background-image: url('https://res.cloudinary.com/db76nylxq/image/upload/v1685668633/close-up-male-hands-using-laptop-home_fcgrhv.jpg ');
+  /* background-image: url('https://res.cloudinary.com/db76nylxq/image/upload/v1685668633/close-up-male-hands-using-laptop-home_fcgrhv.jpg '); */
   height: 100vh;
   background-size: cover;
   display: flex;
