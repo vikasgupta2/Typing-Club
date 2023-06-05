@@ -11,19 +11,21 @@ const characters ='asdfjk dfjk flak flask as l;as dfjk flask as dfjk las l;as df
 
 
 class Home extends Component {
-  state = {
-    defaultCharacters: characters,
-    defaultCharactersLength: 0,
-    userInput: '',
-    activeCharIndex: 0,
-    isTimerRunning: false,
-    timeElapsedInSeconds: 0,
-    correctCharArr: [],
-    correctCharCount: 0,
-    ncpm: 0,
-    keyPressedCount:0,
-    accuracy: 0,
-    isPauseButtonClicked:false,
+  constructor(){
+    super();
+    this.state = { defaultCharacters: characters,
+      defaultCharactersLength: 0,
+      userInput: '',
+      activeCharIndex: 0,
+      isTimerRunning: false,
+      timeElapsedInSeconds: 0,
+      correctCharArr: [],
+      correctCharCount: 0,
+      ncpm: 0,
+      keyPressedCount:0,
+      accuracy: 0,
+      isPauseButtonClicked:false, 
+    }
   }
 
   componentDidMount(){
@@ -50,16 +52,17 @@ class Home extends Component {
     this.setState({isTimerRunning: true})
     document.getElementById("inputText").removeAttribute("disabled")
     document.getElementById("pauseResumeBtn").removeAttribute("disabled")
+    document.getElementById("pauseResumeBtn").classList.remove("disabled-btn")
     document.getElementById("resultBtn").removeAttribute("disabled")
+    document.getElementById("resultBtn").classList.remove("disabled-btn")
     document.getElementById("restartBtn").removeAttribute("disabled")
+    document.getElementById("restartBtn").classList.remove("disabled-btn")
     document.getElementById("customInputBtn").setAttribute("disabled","enabled")
     document.getElementById("generateRandomChar").setAttribute("disabled","enabled")
     document.getElementById("startBtn").classList.add("disabled-btn")
     document.getElementById("customInputBtn").classList.add("disabled-btn")
     document.getElementById("generateRandomChar").classList.add("disabled-btn")
-    document.getElementById("restartBtn").classList.remove("disabled-btn")
-    document.getElementById("pauseResumeBtn").classList.remove("disabled-btn")
-    document.getElementById("resultBtn").classList.remove("disabled-btn")
+    
     document.getElementById('inputText').focus()
   }
 
